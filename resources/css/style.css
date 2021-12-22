@@ -1,0 +1,63 @@
+body {
+  background-image: url("../images/myGalagaBackground.gif");
+}
+
+.titleHeader {
+  color: lime;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.navContainer {
+  color: aliceblue;
+  background-color: black;
+}
+
+p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: chocolate;
+}
+
+.languagesTable {
+  margin: 0 auto;
+}
+
+table {
+  font-size: 15px;
+  margin: 20px auto;
+}
+
+table h3 {
+  flex-basis: 2px;
+  padding: 5px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+table h2 {
+  padding: 5px;
+}
+
+.langFoot td {
+  border: 2px solid coral;
+}
+
+th {
+  /* border: 2px solid #8c6b48; */
+  /* border: 10px inset rgb(132, 546, 324); */
+  border: 2px solid gold;
+}
+
+td {
+  border: 2px solid gold;
+  width: 300rem;
+}
+
+.langTableContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 660px;
+  color: green;
+  background-color: black;
+}

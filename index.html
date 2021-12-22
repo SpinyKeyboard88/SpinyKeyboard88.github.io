@@ -2,15 +2,84 @@
 <html>
     <head>
         <title>Welcome to my website!</title>
-        <link href="./resources/css/index.css" type='text/css' rel="stylesheet">
+        <link href="./resources/css/style.css" type='text/css' rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1 class='titleHeader'>This is so kool</h1>
+            <div class='navContainer'>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Games?</li>
+                        <li>Coding Cheatsheets</li>
+                        <li>About</li>
+                    </ul>
+                </nav>
+            </div>
+        <p class='titleHeader'>The thing above is going to be the navigation links</p>
+        <p class='titleHeader'>I'm also going to fix the table in the bottom </p>
         </header>
+
+        <div class='langTableContainer'>
+            <table>
+                <thead class='langHead'>
+                    <tr>
+                        <!-- Colspan can go through all the columns -->
+                        <th colspan="3"><h1>My First Table</h1></th>
+                    </tr>
+                    <tr>
+                        <th><h2>Languages</h3></th>
+                        <th><h2>Level</h2></th>
+                        <th><h2>Status</h2></th>
+                    </tr>
+                <tbody>
+                    <tr>
+                        <td><h3>C</h3></td>
+                        <td><h3>2/10</h3></td>
+                        <td><h3>Not Learning</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>C++</h3></td>
+                        <td><h3>3/10</h3></td>
+                        <td><h3>Not Learning</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Python</h3></td>
+                        <td><h3>6/10</h3></td>
+                        <td><h3>Learning</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>HTML</h3></td>
+                        <td><h3>5/10</h3></td>
+                        <td><h3>Learning (duh)</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>CSS</h3></td>
+                        <td><h3>4/10</h3></td>
+                        <td><h3>Learning (duh)</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>C++</h3></td>
+                        <td><h3>4/10</h3></td>
+                        <td><h3>Not Learning</h3></td>
+                    </tr>
+                </tbody>
+                <tfoot class='langFoot'>
+                    <tr>
+                        <td>Languages I've encountered</td>
+                        <td>Where i see myself with lang</td>
+                        <td>What I'm doing with the lang</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
         <p>There is nothing here yet! :)</p>
         <br>
         <p>YEAHHHHHH</p>
+
+
+        <img src='./resources/images/spinning_ness.gif'>
 
     </body>
 </html>
