@@ -1,6 +1,6 @@
-body {
+/* body {
   background-image: url("../images/myGalagaBackground.gif");
-}
+} */
 
 .titleHeader {
   color: lime;
@@ -16,7 +16,7 @@ body {
 p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: chocolate;
+  color: green;
 }
 
 .languagesTable {
@@ -60,4 +60,10 @@ td {
   height: 660px;
   color: green;
   background-color: black;
+}
+
+.sheet .sheetBody p {
+  font-size: small;
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
