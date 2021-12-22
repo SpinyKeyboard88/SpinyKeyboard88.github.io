@@ -1,6 +1,7 @@
 body {
-  /* background-image: url("../images/myGalagaBackground.gif"); */
+  background-image: url("../images/myGalagaBackground.gif");
   background-color: aliceblue;
+  color: limegreen;
 }
 
 .titleHeader {
@@ -12,6 +13,11 @@ body {
 .navContainer {
   color: aliceblue;
   background-color: black;
+  width: 80%;
+  height: 20%;
+  border-radius: 10px;
+  /* This auto will make it center. You just need a width first */
+  margin: 0 auto;
 }
 
 p {
@@ -72,7 +78,8 @@ td {
 .sheet .sheetBody {
   margin: auto;
   padding: 5px 10px 20x;
-  border: 1px solid black;
+  border: 1px solid purple;
+  background-color: aliceblue;
   text-align: justify;
 }
 
@@ -96,11 +103,29 @@ td {
   color: darkviolet;
 }
 
-#someGuy {
-  width: 10%;
-  height: 15%;
+.guyFigure {
+  border: 2px coral solid;
   position: absolute;
+  display: flex;
+  flex-flow: column;
+  max-width: 100px;
+  margin: auto;
+}
+
+.guyFigure img {
+  max-width: 100px;
+  max-height: 90px;
   z-index: 1;
-  right: 5px;
-  top: 10px;
+}
+
+.guyFigure figcaption {
+  background-color: grey;
+  color: white;
+  /* font-style: italic;
+  font-size: smaller;
+  font-family: sans-serif; 
+  or you can just right font*/
+  font: italic smaller sans-serif;
+  text-align: center;
+  padding: 1px;
 }
