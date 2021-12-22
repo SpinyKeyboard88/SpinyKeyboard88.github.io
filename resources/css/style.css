@@ -1,6 +1,7 @@
-/* body {
-  background-image: url("../images/myGalagaBackground.gif");
-} */
+body {
+  /* background-image: url("../images/myGalagaBackground.gif"); */
+  background-color: aliceblue;
+}
 
 .titleHeader {
   color: lime;
@@ -62,8 +63,44 @@ td {
   background-color: black;
 }
 
+/* Includes the entire sheet sections */
+.sheet {
+  text-align: center;
+}
+
+/* Everything that is inside the section information */
+.sheet .sheetBody {
+  margin: auto;
+  padding: 5px 10px 20x;
+  border: 1px solid black;
+  text-align: justify;
+}
+
+/* Only includes the p element within the sheets bodies */
 .sheet .sheetBody p {
   font-size: small;
   font-style: normal;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#cssSection {
+  color: blueviolet;
+}
+
+#htmlSection {
+  color: violet;
+}
+
+#javascriptSection {
+  color: darkviolet;
+}
+
+#someGuy {
+  width: 10%;
+  height: 15%;
+  position: absolute;
+  z-index: 1;
+  right: 5px;
+  top: 10px;
 }
