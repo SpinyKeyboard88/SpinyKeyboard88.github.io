@@ -10,14 +10,53 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
-.navContainer {
-  color: aliceblue;
+#indexSection h1 {
+  text-align: center;
+  font-size: 50px;
   background-color: black;
-  width: 80%;
-  height: 20%;
-  border-radius: 10px;
-  /* This auto will make it center. You just need a width first */
-  margin: 0 auto;
+}
+
+#indexSection p {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: fantasy;
+  background-color: black;
+}
+
+#indexSection span {
+  font-family: monospace;
+  text-transform: none;
+  color: aqua;
+}
+
+.navContainer {
+  background-color: blue;
+}
+
+.navContainer ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0%;
+  background-color: bisque;
+  /* overflow:hidden is added to the ul element to prevent li elements from going outside of the list. */
+  overflow: hidden;
+}
+
+.navContainer li {
+  float: left;
+}
+
+.navContainer li a {
+  display: block;
+  padding: 8px 10px;
+}
+
+.navContainer li a:hover:not(.active) {
+  background-color: blanchedalmond;
+}
+
+.active {
+  background-color: peachpuff;
 }
 
 p {
@@ -124,8 +163,20 @@ td {
   /* font-style: italic;
   font-size: smaller;
   font-family: sans-serif; 
-  or you can just right font*/
+  or you can just use font*/
   font: italic smaller sans-serif;
   text-align: center;
   padding: 1px;
+}
+
+.aboutTexts article {
+  background-color: black;
+}
+
+footer {
+  font-family: Helvetica, sans-serif;
+  max-width: 120px;
+  padding: 1px;
+  margin: 1px 10px 1px;
+  background-color: black;
 }
