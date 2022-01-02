@@ -173,6 +173,22 @@ td {
   background-color: black;
 }
 
+.games-list h2 {
+  text-align: center;
+}
+
+.list-wrapper {
+  margin: 3em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-art img {
+  width: 10rem;
+  max-width: 100%;
+}
+
 footer {
   font-family: Helvetica, sans-serif;
   max-width: 120px;
