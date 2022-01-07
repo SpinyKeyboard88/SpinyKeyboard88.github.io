@@ -1,0 +1,15 @@
+var today = new Date();
+var hourNow = today.getHours;
+var greeting;
+
+if (hourNow > 18) {
+    greeting = 'Good evening by the way!';
+} else if (hourNow > 12) {
+    greeting = 'Good afternoon by the way!';
+} else if (hourNow > 0) {
+    greeting = 'Good morning by the way!';
+} else {
+    greeting = 'Welcome again!'
+}
+
+document.write('<p>' + greeting + '</p>');
