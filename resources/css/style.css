@@ -134,9 +134,39 @@ td {
   color: blueviolet;
 }
 
+/* Start of HTML section */
 #htmlSection {
-  color: violet;
+  color: goldenrod;
 }
+
+#htmlSection h3 {
+  color: blue;
+  text-indent: 1%;
+  text-decoration-line: underline;
+}
+
+#htmlSection h4 {
+  color: blue;
+  text-indent: 2%;
+}
+
+#htmlSection ul,
+li {
+  text-overflow: clip;
+  text-align: justify;
+}
+
+#htmlSection .example-html {
+  color: cornflowerblue;
+  text-indent: 10%;
+}
+
+#htmlSection .example-html::before {
+  text-decoration: wavy;
+  content: "Example: ";
+}
+
+/* End of HTML section */
 
 #javascriptSection {
   color: darkviolet;

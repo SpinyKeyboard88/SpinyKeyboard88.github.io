@@ -21,8 +21,175 @@
         <section class='sheet' id='htmlSection'>
             <h2>HTML</h2>
             <div class='sheetBody'>
-                <p>This section is for the HTML sheets</p>
-                <h3>Stuff I don't remember</h3>
+                <h3>Headings</h3>
+                    <h4>h1</h4>
+                    <ul>
+                        <li>Main page headings</li>
+                        <li>Largest displyaed content</li>
+                    </ul>
+                    <h4>h2</h4>
+                    <ul>
+                        <li>Subheadings</li>
+                    </ul>
+                    <h4>h3, h4, h5</h4>
+                    <ul>
+                        <li>Sub-subheadings, shrinking in size as the h# goes up</li>
+                    </ul>
+                    <h4>h6</h4>
+                    <ul>
+                        <li>Smallest heading element</li>
+                    </ul>    
+                <h3>Paragraphs</h3>
+                    <h4>p</h4>
+                    <ul>
+                        <li>Block of test enclosed by starting and ending tags</li>
+                        <ul>
+                            <li>p start paragraph tag</li>
+                            <li>/p end paragraph tag</li>
+                        </ul>
+                        <li>Space between paragraph new lines</li>
+                    </ul>
+                    <p class="example-html">This is a paragrpah element</p>
+                <h3>Superscript & Subscript</h3>
+                    <h4>sup</h4>
+                        <ul>
+                            <li>Superscript to denote dates, mathematical concepts</li>
+                            <ul>
+                                <li>sup start tag</li>
+                                <li>/sup end tag</li>
+                                <li class="example-html">8<sup>2</sup> = 64</li>
+                            </ul>
+                        </ul>
+                    <h4>sub</h4>
+                        <ul>
+                            <li>Subscript to denote (typically) chemical formulas, footnotes, annotations</li>
+                            <ul>
+                                <li>sub start tag</li>
+                                <li>/sub end tag</li>
+                                <li class="example-html">Water = H<sub>2</sub>O</li>
+                            </ul>
+                        </ul>
+                    <h3>White space</h3>
+                    <h4>Within a paragraph element</h4>
+                        <ul>
+                            <li>& nbsp all together is a non-breakable-space</li>
+                            <li>Multiple spaces are treated as single spaces</li>
+                            <li>new lines /Line Breaks are treated as spaces</li>
+                            <ul><li>Use br/ to add a new line within a paragraph element</li></ul>
+                        </ul>
+                        <p class="example-html">Here is&nbspan example of "& nbsp"</p>
+                        <p class="example-html">I can make a paragraph and with a new line, and then a new line <br/>STARTING RIGHT HERE!</p>
+                    <h4>Horizontal Rules</h4>
+                        <ul>
+                            <li>Creates a break of thought</li>
+                            <li>hr/</li>
+                        </ul>
+                        <p class="example-html">Wait let me have a break of thought <hr/>okay i'm done</p>
+                    <h4>Empty Elements</h4>
+                        <ul>
+                            <li>br/</li>
+                            <li>hr/</li>
+                            <li>You can use these by themselves outside of a paragraph</li>
+                        </ul>
+                    <h3>Markup</h3>
+                        <ul>
+                            <li>Structural markup</li>
+                            <ul><li>Elements that you can use to describe things like headings and paragraphs</li></ul>
+                            <li>Semantic markup</li>
+                            <ul><li>Nonstructural related tags intended to add extra information to webpage</li></ul>
+                        </ul>
+                    <h3>Bold & Italic</h3>
+                    <h4>Bold</h4>
+                        <ul>
+                            <li>b start tag</li>
+                            <li>/b end tag</li>
+                        </ul>
+                        <p class="example-html">The last word is <b>bolded</b></p>
+                    <h4>Italic</h4>
+                        <ul>
+                            <li>i start tag</li>
+                            <li>/i end tag</li>
+                            <li>em /em may also be used</li>
+                        </ul>
+                        <p class="example-html"><i>Italic</i> with an i</p>
+                        <p class="example-html"><em>Italic</em> with em</p>
+                    <h3>Quotations</h3>
+                    <h4>Blockquotes</h4>
+                        <ul>
+                            <li>Longer quotes that require its own paragraph</li>
+                            <li>Indented paragraph text</li>
+                        </ul>
+                        <p class="example-html">Here i am going to try a blockquote <blockquote>and that's all that was said...</blockquote></p>
+                        <ul>
+                            <li>Quotes within a paragraph</li>
+                        </ul>
+                        <p class="example-html">I'm going to quote someone: <q>The world, chico. The world...</q></p>
+                    <h3>Abbreviations & Acronyms</h3>
+                    <h4>Abbreviations</h4>
+                        <ul>
+                            <li>abbr start tag</li>
+                            <li>/abbr start tag</li>
+                        </ul>
+                        <p class="example-html">An example of an abbr, <abbr>Abbreviation</abbr>,yeah</p>
+                    <h4>HTML 4 method</h4>
+                        <ul>
+                            <li>acronym start</li>
+                            <li>/acronym end</li>
+                        </ul>
+                        <p class="example-html">Here is an acr, <acromym>acroynm</acromym>, of something</p>
+                    <h3>Citations & Definitons</h3>
+                    <h4>Citation</h4>
+                        <ul>
+                            <li>Citation - to reference a piece of work, book, film, etc.</li>
+                            <ul>
+                                <li>cite start tag</li>
+                                <li>/cite end tag</li>
+                            </ul>
+                        </ul>
+                        <p class="example-html">I'm gonna cite myself here lol <cite>Me</cite></p>
+                    <h4>Definition</h4>
+                        <ul>
+                            <li>dfn start tag</li>
+                            <li>/dfn end tag</li>
+                            <li>Chrome and Safari tend to ignore this tag</li>
+                        </ul>
+                        <p class="example-html">Well I hope Safari doesn't ignore it this time <dfn>It actually didn't ignore it</dfn></p>
+                        <p class="example-html">Definition: <dfn>A statement of the exact meaning of a word, especially in a dictionary</dfn></p>
+                    <h3>Author Details</h3>
+                        <ul>
+                            <li>Element containing contact details for page author</li>
+                            <ul>
+                                <li>address start tag</li>
+                                <li>/address end tag</li>
+                            </ul>
+                            <li>Very specific use</li>
+                        </ul>
+                        <p class="example-html">Only for specific use <address>Very specific</address></p>
+                    <h3>Changes to content</h3>
+                    <h4>insert</h4>
+                        <ul>
+                            <li>Insert content into paragraph</li>
+                            <ul>
+                                <li>ins start tag</li>
+                                <li>/ins end tag</li>
+                            </ul>
+                        </ul>
+                    <p class="example-html">I'm going to insert something before this <ins>Something</ins> word </p>
+                    <h4>Delete</h4>
+                        <ul>
+                            <li>Delete content from paragraph</li>
+                            <ul>
+                                <li>del start tag</li>
+                                <li>/del end tag</li>
+                            </ul>
+                        </ul>
+                        <p class="example-html">Deleting the last word in this sentence <del>deleted</del></p>
+                    <h4>Urelement content</h4>
+                        <ul>
+                            <li>s start tag</li>
+                            <li>/s end tag</li>
+                        </ul>
+                        <p class="example-html">I don't know what this is <s>here</s> basically the same as delete</p>
             </div>
 
         </section>
