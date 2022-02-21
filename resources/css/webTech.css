@@ -55,7 +55,7 @@ h1 {
 }
 
 /* For generic use with future lecture notes */
-section {
+.lectured {
   width: fit-content;
   align-self: center;
   margin: 1rem auto;
@@ -63,7 +63,7 @@ section {
   border: 0.5rem solid snow;
   background-color: bisque;
 }
-section h3 {
+.lectured h3 {
   color: darkred;
   text-align: center;
   text-rendering: optimizeSpeed;
@@ -73,10 +73,10 @@ section h3 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-section ul {
+.lectured ul {
   list-style-type: square;
 }
-section ul li {
+.lectured ul li {
   font-size: small;
   font-family: Arial, Helvetica, sans-serif;
   height: 1.75rem;
