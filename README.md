@@ -10,3 +10,11 @@ EDIT
 - make an interesting site
 
 Thx bye
+
+# Newer Edit on Jan 5 2023
+**with actual markdown **
+My goals for this website is to:
+- Make the site more modern 
+- have a color palette for the website
+This will be my portfolio website
+

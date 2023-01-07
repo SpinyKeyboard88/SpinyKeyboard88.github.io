@@ -1,228 +1,97 @@
+/* For larger screens */
+* {
+    box-sizing: border-box;
+}
+
 body {
-  background-image: url("../images/myGalagaBackground.gif");
-  background-color: aliceblue;
-  color: limegreen;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-.titleHeader {
-  color: lime;
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-}
-
-#indexSection h1 {
-  text-align: center;
-  font-size: 50px;
-  background-color: black;
-}
-
-#indexSection p {
-  text-transform: capitalize;
-  text-align: center;
-  font-family: fantasy;
-  background-color: black;
-}
-
-#indexSection span {
-  font-family: monospace;
-  text-transform: none;
-  color: aqua;
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 .navContainer {
-  background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2em 1em;
 }
 
-.navContainer ul {
-  list-style-type: none;
-  margin: auto;
-  padding: 0%;
-  background-color: bisque;
-  /* overflow:hidden is added to the ul element to prevent li elements from going outside of the list. */
-  overflow: hidden;
+
+
+.navContainer .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.navContainer li {
-  float: left;
+.navContainer .links a {
+    max-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: thick double lightskyblue;
+    padding: 10px;
+    margin: 0px 1em;
 }
 
-.navContainer li a {
-  display: block;
-  padding: 8px 10px;
+/* Only the icon */
+.navContainer .links .icon {
+    display: none;
 }
 
-.navContainer li a:hover:not(.active) {
-  background-color: blanchedalmond;
+
+#this-is-me {
+    background-color: lightyellow;
 }
 
-.active {
-  background-color: peachpuff;
+#projects-snippet {
+    background-color: lightsalmon;
 }
 
-p {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: green;
+#aboutme-snippet {
+    background-color: lightseagreen;
 }
 
-.languagesTable {
-  margin: 0 auto;
+#contact-snippet {
+    background-color: lightgreen;
 }
 
-table {
-  font-size: 15px;
-  margin: 20px auto;
-}
+/* For larger screens */
+@media screen and (max-width: 480px) {
+    body {
+        background-color: black;
+    }
 
-table h3 {
-  flex-basis: 2px;
-  padding: 5px;
-  text-align: left;
-  margin-left: 20px;
-}
+    .navContainer .links a:not(:first-child) {
+        display: none;
+    }
 
-table h2 {
-  padding: 5px;
-}
+    .navContainer .links a {
+        float: right;
+        display: block;
+    }
 
-.langFoot td {
-  border: 2px solid coral;
-}
+    .navContainer .responsive {
+        position: relative;
+    }
 
-th {
-  /* border: 2px solid #8c6b48; */
-  /* border: 10px inset rgb(132, 546, 324); */
-  border: 2px solid gold;
-}
+    .navContainer .responsive .links {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 
-td {
-  border: 2px solid gold;
-  width: 300rem;
-}
+    .navContainer .responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 
-.langTableContainer {
-  max-width: 800px;
-  margin: 0 auto;
-  height: 660px;
-  color: green;
-  background-color: black;
-}
-
-/* Includes the entire sheet sections */
-.sheet {
-  text-align: center;
-}
-
-/* Everything that is inside the section information */
-.sheet .sheetBody {
-  margin: auto;
-  padding: 5px 10px 20x;
-  border: 1px solid purple;
-  background-color: aliceblue;
-  text-align: justify;
-}
-
-/* Only includes the p element within the sheets bodies */
-.sheet .sheetBody p {
-  font-size: small;
-  font-style: normal;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-#cssSection {
-  color: blueviolet;
-}
-
-/* Start of HTML section */
-#htmlSection {
-  color: goldenrod;
-}
-
-#htmlSection h3 {
-  color: blue;
-  text-indent: 1%;
-  text-decoration-line: underline;
-}
-
-#htmlSection h4 {
-  color: blue;
-  text-indent: 2%;
-}
-
-#htmlSection ul,
-li {
-  text-overflow: clip;
-  text-align: justify;
-}
-
-#htmlSection .example-html {
-  color: cornflowerblue;
-  text-indent: 10%;
-}
-
-#htmlSection .example-html::before {
-  text-decoration: wavy;
-  content: "Example: ";
-}
-
-/* End of HTML section */
-
-#javascriptSection {
-  color: darkviolet;
-}
-
-.guyFigure {
-  border: 2px coral solid;
-  position: absolute;
-  display: flex;
-  flex-flow: column;
-  max-width: 100px;
-  margin: auto;
-}
-
-.guyFigure img {
-  max-width: 100px;
-  max-height: 90px;
-  z-index: 1;
-}
-
-.guyFigure figcaption {
-  background-color: grey;
-  color: white;
-  /* font-style: italic;
-  font-size: smaller;
-  font-family: sans-serif; 
-  or you can just use font*/
-  font: italic smaller sans-serif;
-  text-align: center;
-  padding: 1px;
-}
-
-.aboutTexts article {
-  background-color: black;
-}
-
-.games-list h2 {
-  text-align: center;
-}
-
-.list-wrapper {
-  margin: 3em 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.box-art img {
-  width: 10rem;
-  max-width: 100%;
-}
-
-footer {
-  font-family: Helvetica, sans-serif;
-  max-width: 120px;
-  padding: 1px;
-  margin: 1px 10px 1px;
-  background-color: black;
 }
