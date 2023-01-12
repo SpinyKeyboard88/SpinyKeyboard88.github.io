@@ -1,3 +1,10 @@
+/* Colors */
+/* 1. #383D40 background */
+/* 2. #6AC6F7 works with 1 and 4 */
+/* 3. #BAE8FF  works with 1 and 4 */
+/* 4. #3F4E57 background */
+/* 5. #8AABBD works with 1 */
+
 /* custom fonts */
 /* font-family: 'PF Westa Seven', sans-serif; */
 /* font-family: 'PF Westa Seven Condensed', sans-serif; */
@@ -9,33 +16,237 @@
 
 
 
-/* For larger screens */
+/* start of for every page  */
+* {
+    background-color: #383D40;
+    color: #BAE8FF;
+}
 
-/* start of hello snippet */
+
+
+nav li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #6AC6F7;
+}
+
+a:visited {
+    color: #8AABBD;
+}
+
+a:focus {
+    color: salmon
+}
+
+a:hover {
+    color: lime;
+}
+
+a:active {
+    color: red;
+}
+
+
+.title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #6AC6F7;
+}
 
 .big-text {
-    font-family: 'Earthbound', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: 100;
     font-size: 2rem;
 }
 
-.small-text {
-    font-family: 'Earthbound', sans-serif;
+.medium-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
-    font-size: 2rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.small-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.smaller {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: .5rem;
+}
+
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-child {
+    display: block;
+    padding: 10px 2rem;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-child {
+    margin: 2rem 3rem;
+    padding: 2rem 3rem;
+}
+
+
+
+/* start of card styling */
+
+
+/* end of card styling */
+
+/* end of for every page */
+
+
+/* For larger screens */
+
+
+/* start of navigate my site */
+
+#navigate-my-site ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#navigate-my-site ul li {
+    padding: 0px 10px;
+}
+
+
+/* end of navigate my site */
+
+
+/* start of hello snippet */
+
+#hello-snippet {
+    margin: 6rem 0px;
 }
 
 .my-name {
     font-size: 3rem;
     color: tomato;
+    padding-left: 10px;
 }
+
+.hello-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.hello-info {
+    text-align: center;
+    padding: 150px 0px 0px 0px;
+}
+
+.hello-image img {
+    width: auto;
+}
+
+.hello-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hello-links a img {
+    width: 50px;
+    height: auto;
+    padding: 0px 2em;
+}
+
+.icon-bars {
+    display: none;
+}
+
 
 /* end of hello snippet */
 
-/* start of card styling */
-/* end of card styling */
+/* Start of about me snippet */
+
+#aboutme-snippet {
+    margin: 6rem 0px;
+}
+
+.square-it {
+    width: 250px;
+    height: auto;
+}
+
+.flex-child p {
+    overflow: auto;
+}
+
+.format-paragraph {
+    line-height: 2em;
+}
+
+/* End of about me snippet */
+
+
+/* Start of projects snippet */
+
+
+/* End of projects snippet */
 
 
 /* For smaller screens */
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+    .hello-info {
+        text-align: center;
+        padding: 0px 0px;
+    }
+
+    .hello-image img {
+        text-align: center;
+        padding: 0px 0px;
+        width: 400px;
+    }
+
+    .nav-child {
+        padding: 0px 2rem;
+        text-align: center;
+    }
+
+    #reverse-me {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    .flex-child {
+        margin: 1rem 3rem;
+        padding: 1rem 3rem;
+    }
+
+
+}
