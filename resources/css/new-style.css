@@ -1,97 +1,41 @@
-/* For larger screens */
-* {
-    box-sizing: border-box;
-}
+/* custom fonts */
+/* font-family: 'PF Westa Seven', sans-serif; */
+/* font-family: 'PF Westa Seven Condensed', sans-serif; */
 
-body {
-    background-color: lightgray;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
+/* font-family: 'Pixel12x10', sans-serif; */
+/* font-family: 'Pixel12x10Mono', sans-serif; */
 
-section {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-.navContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 2em 1em;
-}
+/* font-family: 'Earthbound', sans-serif; */
 
 
-
-.navContainer .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.navContainer .links a {
-    max-height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border: thick double lightskyblue;
-    padding: 10px;
-    margin: 0px 1em;
-}
-
-/* Only the icon */
-.navContainer .links .icon {
-    display: none;
-}
-
-
-#this-is-me {
-    background-color: lightyellow;
-}
-
-#projects-snippet {
-    background-color: lightsalmon;
-}
-
-#aboutme-snippet {
-    background-color: lightseagreen;
-}
-
-#contact-snippet {
-    background-color: lightgreen;
-}
 
 /* For larger screens */
-@media screen and (max-width: 480px) {
-    body {
-        background-color: black;
-    }
 
-    .navContainer .links a:not(:first-child) {
-        display: none;
-    }
+/* start of hello snippet */
 
-    .navContainer .links a {
-        float: right;
-        display: block;
-    }
-
-    .navContainer .responsive {
-        position: relative;
-    }
-
-    .navContainer .responsive .links {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .navContainer .responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
+.big-text {
+    font-family: 'Earthbound', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 2rem;
 }
+
+.small-text {
+    font-family: 'Earthbound', sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.my-name {
+    font-size: 3rem;
+    color: tomato;
+}
+
+/* end of hello snippet */
+
+/* start of card styling */
+/* end of card styling */
+
+
+/* For smaller screens */
+@media screen and (max-width: 480px) {}

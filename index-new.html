@@ -6,45 +6,67 @@
         <link href="./resources/css/new-style.css" type='text/css' rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="/resources/images/happyFace.png">
         <script src="./resources/js/responsiveNav.js"></script>
+
+        <link href="https://fonts.cdnfonts.com/css/pf-westa-seven" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/pixel12x10" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/earthbound" rel="stylesheet">
+                
+
     </head>
     <body>
-        <div id="top-stuff">
+        <header>
                 <nav class="navContainer">
-                    <div class="logo">
-                        <a class="active" href="#index-new">Logo</a>
-                    </div>
+                    
+                    <a class="active" href="#index-new">Logo</a>
 
-                    <div class="links" id="navigate-my-site">
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">\\\</a>
-                        <a href="./projects.html">Projects</a>
-                        <a href="./aboutme.html">About me</a>
-                        <a href="./contact.html">Contact</a>
-                    </div>
+                    <nav class="links" id="navigate-my-site">
+                        <div>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">\\\</a>
+                        </div>
+                        <ul>
+                            <li><a href="./projects.html">Projects</a></li>
+                            <li><a href="./aboutme.html">About me</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
                 </nav>
-        </div>
+        </header>
+        <main>
+            <section id='hello-snippet'>
+                <div class="hello-container">
+                    <div class="hello-info">
+                        <h1 class="big-text">Hello,</h1>
+                        <p class="small-text">I'm <span class="my-name">Juan Porraz</span></p>
+                    </div>
+                    <div>
+                    
+                    </div>
+                </div>
+                <div class="hello-links">
 
-        <section id='this-is-me'>
-            <h2>Hello</h2>
-            <p>I'm a web developer</p>
-        </section>
+                </div>
+            </section>
 
 
-        <section id="aboutme-snippet">
-            <h2>Résumé stuff</h2>
-            <p>Some resume things</p>
-        </section>
-
-
-        <section id="projects-snippet">
-            <h2>Projects</h2>
-            <p>Here are some of the projects that I've worked on</p>
-        </section>
-        
-        <section id="contact-snippet">
-            <h2>Want to contact me?</h2>
-            <p>You can contact me here</p>
-        </section>
-
+            <section id="projects-snippet">
+                <h2>Projects</h2>
+                <p>Here are some of the projects that I've worked on</p>
+                <div class="card-container">
+                    <div class="card">
+                        <img class="card-img">
+                        <div class="card-body">
+                            <div class="card-title"></div>
+                            <div class="card-text"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contact-snippet">
+                <h2>Want to contact me?</h2>
+                <p>You can contact me here</p>
+            </section>
+        </main>
         <footer>
             By: pizzasloth82
         </footer>

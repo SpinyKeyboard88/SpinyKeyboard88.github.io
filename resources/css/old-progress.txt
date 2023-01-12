@@ -1,0 +1,97 @@
+/* For larger screens */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2em 1em;
+}
+
+
+
+.navContainer .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navContainer .links a {
+    max-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: thick double lightskyblue;
+    padding: 10px;
+    margin: 0px 1em;
+}
+
+/* Only the icon */
+.navContainer .links .icon {
+    display: none;
+}
+
+
+#this-is-me {
+    background-color: lightyellow;
+}
+
+#projects-snippet {
+    background-color: lightsalmon;
+}
+
+#aboutme-snippet {
+    background-color: lightseagreen;
+}
+
+#contact-snippet {
+    background-color: lightgreen;
+}
+
+/* For larger screens */
+@media screen and (max-width: 480px) {
+    body {
+        background-color: black;
+    }
+
+    .navContainer .links a:not(:first-child) {
+        display: none;
+    }
+
+    .navContainer .links a {
+        float: right;
+        display: block;
+    }
+
+    .navContainer .responsive {
+        position: relative;
+    }
+
+    .navContainer .responsive .links {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navContainer .responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+}
