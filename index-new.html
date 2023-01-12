@@ -6,45 +6,98 @@
         <link href="./resources/css/new-style.css" type='text/css' rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="/resources/images/happyFace.png">
         <script src="./resources/js/responsiveNav.js"></script>
+
+        <link href="https://fonts.cdnfonts.com/css/pf-westa-seven" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/pixel12x10" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/earthbound" rel="stylesheet">
+        
+
     </head>
     <body>
-        <div id="top-stuff">
-                <nav class="navContainer">
-                    <div class="logo">
-                        <a class="active" href="#index-new">Logo</a>
+        <header id="navigate-my-site">
+                <nav class="nav-container small-text">
+                    
+                    <div class="nav-child">
+                        <a class="active" href="#index-new">pizzasloth82</a>
                     </div>
 
-                    <div class="links" id="navigate-my-site">
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">\\\</a>
-                        <a href="./projects.html">Projects</a>
-                        <a href="./aboutme.html">About me</a>
-                        <a href="./contact.html">Contact</a>
+                    <div class="nav-child">
+                        <div>
+                            <i class="icon-bars" onclick="myFunction()">\\\</i>
+                        </div>
+                        <ul>
+                            <li><a  href="./projects.html">Projects</a></li>
+                            <li><a  href="./aboutme.html">About me</a></li>
+                            <li><a  href="./contact.html">Contact</a></li>
+                        </ul>
                     </div>
                 </nav>
-        </div>
+        </header>
+        <main>
+            <section id='hello-snippet'>
+                <div class="hello-container">
+                    <div class="hello-info">
+                        <h1 class="big-text">Hello,</h1>
+                        <p class="medium-text">I'm Juan</p>
+                        <p class="small-text">Or you can call me pizzasloth</p>
+                    </div>
+                    <div class="hello-image">
+                        <img src="./resources/images/spinning_ness.gif">
+                    </div>
+                </div>
+                <div class="hello-links">
+                    <a href="https://twitter.com/pizzasloth82"><img src="./resources/images/svg/twitter.svg"></a>
+                    <a href="https://www.youtube.com/@pizzasloth82"><img src="./resources/images/svg/youtube.svg"></a>
+                    <a href="https://github.com/SpinyKeyboard88"><img src="/resources/images/svg/github.svg"></a>
+                </div>
+            </section>
 
-        <section id='this-is-me'>
-            <h2>Hello</h2>
-            <p>I'm a web developer</p>
-        </section>
 
+            <section id="aboutme-snippet">
+                <h2 class="title">About me</h2>
+                <div class="flex-container">
+                    <div class="flex-container">
+                        <img class="flex-child square-it" src="./resources/images/myGalagaBackground.gif">
+                        <p class="flex-child small-text format-paragraph">As you saw from the title, my name is Juan Porraz.<br>
+                            I'm an undergraduate student from UTSA majoring in Computer Science.<br>
+                            I'm mostly interested in Web and Game Development.
+                        </p>
+                    </div>
+                    <div id="reverse-me" class="flex-container small-text format-paragraph">
+                        <p class="flex-child">I like old retro stuff like consoles, games, movies, and music.<br>
+                            It almost feels like i'm stuck in the past.<br>
+                            I've yet to see what life brings, so as hard as it may be,<br> I'm trying to stay positive no matter what may come.
+                        </p>
+                        <img class="flex-child square-it" src="./resources/images/gameArt/mappy-boxart.jpg">
+                    </div>
+                </div>
+            </section>
 
-        <section id="aboutme-snippet">
-            <h2>Résumé stuff</h2>
-            <p>Some resume things</p>
-        </section>
+            <section id="projects-snippet">
+                <h2 class="title">Projects</h2>
+                <p class="medium-text title">Here are some of the projects that I've worked on</p>
+                <div class="card-container">
+                    <div class="flex-container">
+                        <div class="card">
+                            <img class="card-img">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h3>Carpenter website</h3>
+                                </div>
+                                <div class="card-text">
 
-
-        <section id="projects-snippet">
-            <h2>Projects</h2>
-            <p>Here are some of the projects that I've worked on</p>
-        </section>
-        
-        <section id="contact-snippet">
-            <h2>Want to contact me?</h2>
-            <p>You can contact me here</p>
-        </section>
-
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contact-snippet">
+                <h2>Want to contact me?</h2>
+                <p>You can contact me here</p>
+            </section>
+        </main>
         <footer>
             By: pizzasloth82
         </footer>
