@@ -1,0 +1,285 @@
+$color_1: #BAE8FF;
+$color_2: #6AC6F7;
+$color_3: #8AABBD;
+$color_4: salmon;
+$color_5: lime;
+$color_6: red;
+$color_7: tomato;
+$font-family_1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$background-color_1: #383D40;
+
+/* Colors */
+/* 1. #383D40 background */
+/* 2. #6AC6F7 works with 1 and 4 */
+/* 3. #BAE8FF  works with 1 and 4 */
+/* 4. #3F4E57 background */
+/* 5. #8AABBD works with 1 */
+
+/* custom fonts */
+/* font-family: 'PF Westa Seven', sans-serif; */
+/* font-family: 'PF Westa Seven Condensed', sans-serif; */
+/* font-family: 'Pixel12x10', sans-serif; */
+/* font-family: 'Pixel12x10Mono', sans-serif; */
+/* font-family: 'Earthbound', sans-serif; */
+
+
+/* start of for every page  */
+* {
+    background-color: $background-color_1;
+    color: $color_1;
+}
+
+nav {
+    li {
+        list-style-type: none;
+    }
+}
+
+a {
+    text-decoration: none;
+
+    &:link {
+        color: $color_2;
+    }
+
+    &:visited {
+        color: $color_3;
+    }
+
+    &:focus {
+        color: $color_4;
+    }
+
+    &:hover {
+        color: $color_5;
+    }
+
+    &:active {
+        color: $color_6;
+    }
+}
+
+.title {
+    font-family: $font-family_1;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 2.5rem;
+    text-align: center;
+    color: $color_2;
+}
+
+.big-text {
+    font-family: $font-family_1;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.medium-text {
+    font-family: $font-family_1;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.small-text {
+    font-family: $font-family_1;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.smaller {
+    font-family: $font-family_1;
+    font-style: normal;
+    font-size: .5rem;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-child {
+    display: block;
+    padding: 10px 2rem;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-child {
+    margin: 2rem 3rem;
+    padding: 2rem 3rem;
+
+    p {
+        overflow: auto;
+    }
+}
+
+/* start of card styling */
+
+.card {
+    text-align: center;
+    padding: 1em;
+    border: thick solid #6AC6F7;
+
+    .card-img {
+        width: 15em;
+    }
+
+    .card-body {
+        border: thin dotted $color_3;
+
+        .card-title {
+            font-family: $font-family_1;
+            font-style: normal;
+            font-weight: 100;
+            color: $color_2;
+        }
+
+        .card-text {}
+
+    }
+}
+
+/* end of card styling */
+
+/* start of for every page  */
+
+/* end of for every page */
+
+
+/* For larger screens */
+
+
+/* start of navigate my site */
+
+#navigate-my-site {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        li {
+            padding: 0px 10px;
+        }
+    }
+}
+
+/* end of navigate my site */
+
+
+/* start of hello snippet */
+
+section {
+    margin: 6rem 0px;
+}
+
+.my-name {
+    font-size: 3rem;
+    color: $color_7;
+    padding-left: 10px;
+}
+
+.hello-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.hello-info {
+    text-align: center;
+    padding: 150px 0px 0px 0px;
+}
+
+.hello-image {
+    img {
+        width: auto;
+    }
+}
+
+.hello-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    a {
+        img {
+            width: 50px;
+            height: auto;
+            padding: 0px 2em;
+        }
+    }
+}
+
+.icon-bars {
+    display: none;
+}
+
+/* end of hello snippet */
+
+/* Start of about me snippet */
+
+.square-it {
+    width: 250px;
+    height: auto;
+}
+
+.format-paragraph {
+    line-height: 2em;
+}
+
+/* End of about me snippet */
+
+
+/* Start of projects snippet */
+
+
+/* End of projects snippet */
+
+
+/* For smaller screens */
+
+@media screen and (max-width: 480px) {
+    section {
+        margin: 3rem 0px;
+    }
+
+    .hello-info {
+        text-align: center;
+        padding: 0px 0px;
+    }
+
+    .hello-image {
+        img {
+            text-align: center;
+            padding: 0px 0px;
+            width: 400px;
+        }
+    }
+
+    .nav-child {
+        padding: 0px 2rem;
+        text-align: center;
+    }
+
+    #reverse-me {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    .flex-child {
+        margin: 1rem 3rem;
+        padding: 1rem 3rem;
+    }
+}
