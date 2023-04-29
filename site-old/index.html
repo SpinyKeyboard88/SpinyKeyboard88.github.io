@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>    
+    <meta charset="utf-8">
+    <title>Demo</title>
+</head>
+<body>
+    <a href="http://jquery.com/">jQuery</a>
+    <script src="jquery.js"></script>
+    <script>
+
+        $(document).ready(function() {
+            $("a").click(function(event) {
+                alert("As you can see, the link no longer took you to jquery.com");
+                event.preventDefault;
+            })
+        })
+
+ 
+    </script>
+</body>
+</html>
