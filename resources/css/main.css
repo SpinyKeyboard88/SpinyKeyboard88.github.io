@@ -1,0 +1,64 @@
+@font-face {
+  font-family: Chivo;
+  src: url(../fonts/Chivo/Chivo-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Dongle;
+  src: url(../fonts/Dongle/Dongle-Regular.ttf);
+}
+@font-face {
+  font-family: Darumadrop;
+  src: url(../fonts/Darumadrop_One/DarumadropOne-Regular.ttf);
+}
+body {
+  background-color: #1F2A4E;
+  font-family: Darumadrop;
+}
+body p {
+  color: #68A9E3;
+}
+body a {
+  color: #FF9800;
+}
+body h1,
+body h2,
+body h3 {
+  color: #F1C232;
+}
+body h6 {
+  color: #FFB6C1;
+}
+body nav,
+body footer {
+  background-color: #3D4D7E;
+}
+body nav p,
+body footer p {
+  color: #FFB6C1;
+}
+body .green {
+  color: #8BC34A;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1;
+}
+
+p {
+  font-family: "Arial Rounded MT", sans-serif;
+  letter-spacing: 0.25;
+}
+
+footer {
+  font-family: "Arial Rounded MT", sans-serif;
+  letter-spacing: 0.25;
+  color: #FFB6C1;
+  font-size: small;
+}
+
+.bordered {
+  border: 2px solid #E53935;
+}
+
+/*# sourceMappingURL=main.css.map */

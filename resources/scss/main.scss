@@ -1,0 +1,85 @@
+//color palette for main website
+$primary-color: #1F2A4E;
+$secondary-color: #3D4D7E;
+$text-color: #68A9E3;
+$title-caption-color: #F1C232;
+$link: #FF9800;
+$border: #E53935;
+$text-small: #FFB6C1;
+$green: #8BC34A;
+
+
+@font-face {
+    font-family: Chivo;
+    src: url(../fonts/Chivo/Chivo-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Dongle;
+    src: url(../fonts/Dongle/Dongle-Regular.ttf);
+}
+
+@font-face {
+    font-family: Darumadrop;
+    src: url(../fonts/Darumadrop_One/DarumadropOne-Regular.ttf);
+}
+
+// Colors of the page
+body {
+    p {
+        color: $text-color;
+    }
+
+    a {
+        color: $link;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: $title-caption-color
+    }
+
+    h6 {
+        color: $text-small;
+    }
+
+    background-color: $primary-color;
+
+    nav,
+    footer {
+        background-color: $secondary-color;
+
+        p {
+            color: $text-small;
+        }
+
+    }
+
+    .green {
+        color: $green;
+    }
+
+    font-family: Darumadrop;
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1;
+}
+
+p {
+    font-family: 'Arial Rounded MT', sans-serif;
+    letter-spacing: 0.25;
+}
+
+footer {
+    font-family: 'Arial Rounded MT', sans-serif;
+    letter-spacing: 0.25;
+    color: $text-small;
+    font-size: small;
+}
+
+.bordered {
+    border: 2px solid $border;
+}
