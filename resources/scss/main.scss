@@ -8,7 +8,6 @@ $border: #E53935;
 $text-small: #FFB6C1;
 $green: #8BC34A;
 
-
 @font-face {
     font-family: Chivo;
     src: url(../fonts/Chivo/Chivo-VariableFont_wght.ttf);
@@ -56,6 +55,10 @@ body {
 
     }
 
+
+
+    li,
+    figcaption,
     .green {
         color: $green;
     }
@@ -63,23 +66,38 @@ body {
     font-family: Darumadrop;
 }
 
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
 a {
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 1;
+    letter-spacing: 0.75px;
 }
 
+li,
+figcaption,
 p {
     font-family: 'Arial Rounded MT', sans-serif;
-    letter-spacing: 0.25;
+    letter-spacing: 0.25px;
 }
 
-footer {
-    font-family: 'Arial Rounded MT', sans-serif;
-    letter-spacing: 0.25;
-    color: $text-small;
-    font-size: small;
+img {
+    max-width: 25em;
 }
+
 
 .bordered {
     border: 2px solid $border;
+}
+
+.flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    align-items: center;
+
+    .flex-child {}
 }

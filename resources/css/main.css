@@ -36,29 +36,42 @@ body nav p,
 body footer p {
   color: #FFB6C1;
 }
+body li,
+body figcaption,
 body .green {
   color: #8BC34A;
 }
 
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
 a {
   font-family: "Poppins", sans-serif;
-  letter-spacing: 1;
+  letter-spacing: 0.75px;
 }
 
+li,
+figcaption,
 p {
   font-family: "Arial Rounded MT", sans-serif;
-  letter-spacing: 0.25;
+  letter-spacing: 0.25px;
 }
 
-footer {
-  font-family: "Arial Rounded MT", sans-serif;
-  letter-spacing: 0.25;
-  color: #FFB6C1;
-  font-size: small;
+img {
+  max-width: 25em;
 }
 
 .bordered {
   border: 2px solid #E53935;
+}
+
+.flex-parent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */

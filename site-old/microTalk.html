@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title id="index">Index page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.cdnfonts.com/css/arial-rounded-mt-bold" rel="stylesheet"> -->
+    <link href="https://fonts.cdnfonts.com/css/arial-mt?styles=48926" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="../resources/css/main.css" type='text/css' rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/resources/images/happyFace.png">
+    <!-- <script src="../resources/js/jquery-3.5.1.js"></script> -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="">
+                <li id="index" class="active">
+                    <a href="index.html">Index</a>
+                </li>
+                <li id="about">
+                    <a href="about.html"">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="microTalk.html">microTalk</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="beforeYouStart">
+            <h1>Recording a microTalk podcast</h1>
+            <p>This website will briefly go over everything you need to start the podcast</p>
+            <p>Click on a tab to open the info that you might need</p>
+        </section>
+        <section id="settingUpEquipment" class="bordered">
+            <h2>Setting up the Equipment</h2>
+            <div id="takingEverythingOut">
+                <h3>Taking everything out</h3>
+                <article>
+                    <p>This list will be pretty short since there isn't much to make sure of what you have on hand <br>
+                        A list of things that should be taken out are:</p>
+                    <ul>
+                        <li>MixPre10</li>
+                        <li>Microphones</li>
+                        <li>Do not disturb sign</li>
+                    </ul>
+                    <p>If you are recording for the podcast, make sure to have a <span class="green">release form</span> printed out for the guest to sign</p>
+                </article>
+            </div>
+            <div id="connectingEquipment">
+                <h3>MixPre10 setup</h3>
+                <p>Since the microphones and cables are numbered, just be sure to connect them to the numbered ports</p>
+                <p>The power on switch is numbered 15 on the image</p>
+                <figure>
+                    <img class="bordered" src="../resources/images/microTalk/mixpre10-left.png">
+                    <figcaption>left side of the MixPre10</figcaption>
+                </figure>
+                <p>You should also remember to connect the dongle to the headphone port</p>
+                <p>On the image, it should be numbered 18</p>
+                <figure>
+                    <img class="bordered" src="../resources/images/microTalk/mixpre10-right.png">
+                    <figcaption>right side of the MixPre10</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <section id="configuringMixPre10" class="bordered">
+            <h2>Configuring the MixPre10</h2>
+            <article>
+                <div id="adjustingMixPre10">
+                    <h3>Adjusting the knobs</h3>
+                    <p>After powering on the MixPre10 the indicator should be red and the screen should turn on</p>
+                    <p>The indicator is numbered 1</p>
+                    <figure>
+                        <img src="../resources/images/microTalk/mixpre10-front.png">
+                        <figcaption>front of the MixPre10</figcaption>
+                    </figure>
+                    <p>When moving the numbered knobs, the screen should tell you what level they are at<br>
+                    the levels should be around 48 to 52. This is depending on how loud or low the speaker is</p>
+                    
+                    <h3>Arming the Mics</h3>
+                    <p>A <span class="green">very important </span>step is to make sure that the mics are ARMED</p>
+                    <p>To check if a microphone is armed, you can tap on the screen and see if the numbers are red</p>
+                    <div class="flex-parent">
+                        <figure class="flex-child">
+                            <img src="../resources/images/microTalk/mixpre10-screen.png">
+                            <figcaption>MixPre10 screen</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../resources/images/microTalk/mixPre10-tap.png">
+                            <figcaption>MixPre10 screen after tap</figcaption>
+                        </figure>
+                    </div>
+                    <div class="flex-parent">
+                        <div>
+                            <p>if they are not red, then be sure to tap the numbered knob to Arm the mic</p>
+                            <p>A new screen should pop up, then click on ARM</p>
+                            <p>This is to ensure that a seperate mono file is created for that microphone</p>
+                        </div>
+                        <figure>
+                            <img src="../resources/images/microTalk/mixPre10Arm.png">
+                            <figcaption>MixPre10 knob screen</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="micFeedback">
+                    <h3>Feedback from mics</h3>
+                    <p>When speaking into the mic, the numbered knobs should turn green</p>
+                    <p>If they are not turning green, make sure the mic is turned on and correctly connected to the MixPre10</p>
+                </div>
+                <div id="adjustingHeadphone grain">
+                    <h3>Adjusting headphone grain</h3>
+                    <p>Another thing to check is the headphone grain level in case it's too loud or too low</p>
+                    <p>move the knob numbers 21 on the image until the screen tells you the headphone grain level is 72</p>
+                    <p>I chose the number 72 because it seems to be not too loud and not too low</p>
+                    <figure>
+                        <img class="bordered" src="../resources/images/microTalk/mixpre10-right.png">
+                        <figcaption>right side of the MixPre10</figcaption>
+                    </figure>
+                </div>
+                <div id="settingUpProject">
+                    <h3>Setting up projects</h3>
+                    <p>To set up a new project, you have to click on the hamburger menu which is numbered 5</p>
+                    <p>Then click on projects</p>
+                    <p>then be sure to click on <span class="green">NEW</span> and then click <span class="green">DATE</span> 
+                        since it's easier to know by date than by name</p>
+
+                    <div class="flex-parent">
+                        <figure class="flex-child">
+                            <img src="../resources/images/microTalk/mixpre10-screen.png">
+                            <figcaption>MixPre10 screen</figcaption>
+                        </figure>
+                        <figure class="flex-child">
+                            <img src="../resources/images/microTalk/mixPre10-projects.jpg">
+                            <figcaption>MixPre10 menu screen</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="flex-parent">
+                        <div class="flex-child">
+                            <p>After that, you can change the name of the file by going back to home</p>
+                            <p>Then click on the title of the project on the <span class="green">MixPre10 screen</span>, it is numbered 2</p>
+                            <p>You can click on edit, and then choose a new name for your project</p>
+                            <p>To choose a letter you have to use the headphone knob. To select a letter, push in the knob</p>
+                        </div>
+                        <figure class="flex-child">
+                            <img src="../resources/images/microTalk/mixPre10-rename.png">
+                            <figcaption>MixPre10 filename change screen</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="recordingProject">
+                    <h3>Recording a project</h3>
+                    <p>to begin recording, move the red knob up (it is numbered 4)</p>
+                    <p>You should hear a beep once you start, and the light should come out of the red knob</p>
+                    <p>to stop recording, just push the red knob, and you will hear another sound along with the light turning off around the knob</p>
+                    <figure>
+                        <img src="../resources/images/microTalk/mixpre10-front.png">
+                        <figcaption>MixPre10 front</figcaption>
+                    </figure>
+                    <p>Some to listen to what you recorded on the MixPre10, you can push the knob down to play the recording.</p>
+                    <p>To stop listening, just push on the red knob again</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="exportingProject" class="bordered">
+            <article>
+                <h2>Exporting your project</h2>
+                <div id="transferMode">
+                    <h3>Entering transfer mode</h3>
+                    <p>Once you finished recording the podcast, click on the hamburger icon to go to the menu </p>
+                    <p>Then click on Menu text to go to the next screen</p>
+                    <p>Finally, click on file transfer mode</p>
+                    <p>The screen should then say it's in file transfer mode</p>
+                    <div class="flex-parent">
+                        <figure>
+                            <img src="../resources/images/microTalk/mixpre10-screen.png">
+                            <figcaption>Menu screen</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../resources/images/microTalk/mixPre10-projects.jpg">
+                            <figcaption>Transfer screen</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="plugInPlay">
+                    <h3>Transferring to your computer</h3>
+                    <p>You need a USB-A or USB-C cable to continue to this part</p>
+                    <p>Connect the USB-c cable to the port numbered 13 or 14</p>
+                    <p>Then connect it to your computer</p>
+                    <figure>
+                        <img src="../resources/images/microTalk/mixpre10-left.png">
+                        <figcaption>Left of MixPre10</figcaption>
+                    </figure>
+                    <p>The MixPre10 should show up like if it was a USB or a drive</p>
+                    <p>Navigate through your filesystem, find the date of the project</p>
+                    <p>Then make sure you <span class="green">COPY</span> the file to wherever you please</p>
+                    <p>Once you are finished copying, eject the MixPre10 and then cancel the FileTransfer mode</p>
+                </div>
+            </article>
+        </section>
+
+        
+    </main>
+    <footer>
+        <p>This section is the footer part</p>
+        <p>the text below tells you which page it is using javascript</p>
+        <p class="footer-text" id="currentPage"></p>
+    </footer>
+</body>
+<script src="../resources/js/currentPage.js"></script>
+</html>
