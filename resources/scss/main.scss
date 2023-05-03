@@ -23,81 +23,122 @@ $green: #8BC34A;
     src: url(../fonts/Darumadrop_One/DarumadropOne-Regular.ttf);
 }
 
-// Colors of the page
+
+$Chivo: 'Chivo', sans-serif;
+$Dongle: 'Dongle', sans-serif;
+$Daruma: 'Darumadrop', sans-serif;
+
+
+html,
 body {
-    p {
-        color: $text-color;
-    }
-
-    a {
-        color: $link;
-    }
-
-    h1,
-    h2,
-    h3 {
-        color: $title-caption-color
-    }
-
-    h6 {
-        color: $text-small;
-    }
-
-    background-color: $primary-color;
-
-    nav,
-    footer {
-        background-color: $secondary-color;
-
-        p {
-            color: $text-small;
-        }
-
-    }
-
-
-
-    li,
-    figcaption,
-    .green {
-        color: $green;
-    }
-
-    font-family: Darumadrop;
+    margin: 0;
+    padding: 0;
+    background-color: $secondary-color;
 }
 
+// Colors of the page
 h1 {
     font-size: 2.5rem;
     text-align: center;
+    font-family: $Daruma;
+    color: $title-caption-color;
 }
 
+h2 {
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+h2,
+h3 {
+    text-align: center;
+    font-family: $Daruma;
+    color: $title-caption-color
+}
 
 a {
+    color: $link;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.75px;
 }
 
+
+
 li,
 figcaption,
 p {
+    color: $text-color;
     font-family: 'Arial Rounded MT', sans-serif;
     letter-spacing: 0.25px;
 }
 
-img {
-    max-width: 25em;
+.flex-parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-shrink: inherit;
 }
 
+
+figure {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    img {
+        width: 25em;
+
+    }
+}
 
 .bordered {
     border: 2px solid $border;
 }
 
-.flex-parent {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row;
-    align-items: center;
+.tab-block {
 
-    .flex-child {}
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .tab-item {
+        width: calc(100%/3);
+        padding: 14px 16px;
+        border: none;
+        float: left;
+    }
+
+    .tab-item:hover {
+        background-color: $primary-color;
+    }
+}
+
+.section {
+    background-color: $primary-color;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.unhidden {
+    display: block;
+}
+
+
+@media only screen and (max-width: 600px) {
+    figure {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        img {
+            max-width: 20em;
+
+        }
+    }
 }

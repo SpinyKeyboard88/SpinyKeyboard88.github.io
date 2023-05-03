@@ -12,26 +12,29 @@
     <link href="../resources/css/main.css" type='text/css' rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/resources/images/happyFace.png">
     <!-- <script src="../resources/js/jquery-3.5.1.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</script>
 </head>
 <body>
     <header>
         <nav>
             <ul class="">
-                <li id="index" class="active">
+                <li id="index" class="">
                     <a href="index.html">Index</a>
                 </li>
-                <li id="about">
-                    <a href="about.html"">About</a>
+                <li id="about" class="">
+                    <a href="about.html">About</a>
                 </li>
-                <li>
+                <li id="contact" class="">
                     <a href="contact.html">Contact</a>
                 </li>
-                <li>
+                <li id="microTalk" class="">
                     <a href="microTalk.html">microTalk</a>
                 </li>
             </ul>
         </nav>
     </header>
+
 
     <main>
         <section id="beforeYouStart">
@@ -39,7 +42,13 @@
             <p>This website will briefly go over everything you need to start the podcast</p>
             <p>Click on a tab to open the info that you might need</p>
         </section>
-        <section id="settingUpEquipment" class="bordered">
+
+        <div class="tab-block">
+        <button class="tab-item" onclick="openPage('settingUpEquipment', this)">Setting up</button>
+        <button class="tab-item" onclick="openPage('configuringMixPre10', this)">Configuring</button>
+        <button class="tab-item" onclick="openPage('exportingProject', this)">Exporting</button>
+        </div>
+        <section id="settingUpEquipment" class="section hidden">
             <h2>Setting up the Equipment</h2>
             <div id="takingEverythingOut">
                 <h3>Taking everything out</h3>
@@ -72,7 +81,7 @@
 
         </section>
 
-        <section id="configuringMixPre10" class="bordered">
+        <section id="configuringMixPre10" class="section hidden">
             <h2>Configuring the MixPre10</h2>
             <article>
                 <div id="adjustingMixPre10">
@@ -94,7 +103,7 @@
                             <img src="../resources/images/microTalk/mixpre10-screen.png">
                             <figcaption>MixPre10 screen</figcaption>
                         </figure>
-                        <figure>
+                        <figure class="flex-child">
                             <img src="../resources/images/microTalk/mixPre10-tap.png">
                             <figcaption>MixPre10 screen after tap</figcaption>
                         </figure>
@@ -172,7 +181,7 @@
             </article>
         </section>
 
-        <section id="exportingProject" class="bordered">
+        <section id="exportingProject" class="section hidden">
             <article>
                 <h2>Exporting your project</h2>
                 <div id="transferMode">
@@ -216,6 +225,6 @@
         <p>the text below tells you which page it is using javascript</p>
         <p class="footer-text" id="currentPage"></p>
     </footer>
+    <script src="../resources/js/endOf.js"></script>
 </body>
-<script src="../resources/js/currentPage.js"></script>
 </html>
