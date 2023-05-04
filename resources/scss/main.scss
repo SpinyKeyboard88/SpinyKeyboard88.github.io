@@ -36,6 +36,12 @@ body {
     background-color: $secondary-color;
 }
 
+header {
+    p {
+        text-align: center;
+    }
+}
+
 // Colors of the page
 h1 {
     font-size: 2.5rem;
@@ -50,7 +56,8 @@ h2 {
 }
 
 h2,
-h3 {
+h3,
+h4 {
     text-align: center;
     font-family: $Daruma;
     color: $title-caption-color
@@ -62,12 +69,42 @@ a {
     letter-spacing: 0.75px;
 }
 
+a:hover {
+    color: $border;
+}
+
+section {
+
+    iframe {
+        display: block;
+        margin: auto;
+        padding: 5% 0;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    p {
+        padding-bottom: 12px;
+    }
+
+    p,
+    li {
+        margin: 0 20% 0 20%;
+    }
+
+    article {
+        padding-bottom: 5%;
+    }
+
+}
+
 
 
 li,
 figcaption,
 p {
-    color: $text-color;
+    text-align: left;
+    color: white;
     font-family: 'Arial Rounded MT', sans-serif;
     letter-spacing: 0.25px;
 }
@@ -77,6 +114,11 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     flex-shrink: inherit;
+
+
+    .flex-paragraph {
+        text-align: center;
+    }
 }
 
 
@@ -88,9 +130,17 @@ figure {
     align-items: center;
 
     img {
-        width: 25em;
-
+        max-height: 200px;
+        object-fit: cover;
     }
+
+    figcaption {
+        color: $title-caption-color;
+        padding-top: 20px;
+    }
+
+    padding: 2% 0;
+
 }
 
 .bordered {
@@ -119,6 +169,11 @@ figure {
     background-color: $primary-color;
 }
 
+.important {
+    color: $border;
+    text-decoration: underline;
+    text-decoration-color: $border;
+}
 
 .hidden {
     display: none;
@@ -128,8 +183,46 @@ figure {
     display: block;
 }
 
+footer {
+    font-family: $Chivo;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+
 
 @media only screen and (max-width: 600px) {
+
+    footer {
+        padding-left: 10%;
+        color: white;
+    }
+
+
+    section {
+
+        iframe {
+            width: 25em;
+            height: 15em;
+            display: block;
+            margin: auto;
+            padding: 25% 0 10% 0;
+            text-align: center;
+            overflow: hidden;
+        }
+
+
+        p {
+            padding-bottom: 12px;
+        }
+
+        p,
+        li {
+            margin: 0 10% 0 10%;
+        }
+    }
+
     figure {
         display: flex;
         justify-content: center;
@@ -138,7 +231,7 @@ figure {
 
         img {
             max-width: 20em;
-
+            object-fit: cover;
         }
     }
 }

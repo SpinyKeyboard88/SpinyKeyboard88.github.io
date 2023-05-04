@@ -17,6 +17,10 @@ body {
   background-color: #3D4D7E;
 }
 
+header p {
+  text-align: center;
+}
+
 h1 {
   font-size: 2.5rem;
   text-align: center;
@@ -30,7 +34,8 @@ h2 {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   text-align: center;
   font-family: "Darumadrop", sans-serif;
   color: #F1C232;
@@ -42,10 +47,33 @@ a {
   letter-spacing: 0.75px;
 }
 
+a:hover {
+  color: #E53935;
+}
+
+section iframe {
+  display: block;
+  margin: auto;
+  padding: 5% 0;
+  text-align: center;
+  overflow: hidden;
+}
+section p {
+  padding-bottom: 12px;
+}
+section p,
+section li {
+  margin: 0 20% 0 20%;
+}
+section article {
+  padding-bottom: 5%;
+}
+
 li,
 figcaption,
 p {
-  color: #68A9E3;
+  text-align: left;
+  color: white;
   font-family: "Arial Rounded MT", sans-serif;
   letter-spacing: 0.25px;
 }
@@ -56,6 +84,9 @@ p {
   flex-wrap: wrap;
   flex-shrink: inherit;
 }
+.flex-parent .flex-paragraph {
+  text-align: center;
+}
 
 figure {
   display: flex;
@@ -63,9 +94,15 @@ figure {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  padding: 2% 0;
 }
 figure img {
-  width: 25em;
+  max-height: 200px;
+  object-fit: cover;
+}
+figure figcaption {
+  color: #F1C232;
+  padding-top: 20px;
 }
 
 .bordered {
@@ -91,6 +128,12 @@ figure img {
   background-color: #1F2A4E;
 }
 
+.important {
+  color: #E53935;
+  text-decoration: underline;
+  text-decoration-color: #E53935;
+}
+
 .hidden {
   display: none;
 }
@@ -99,7 +142,34 @@ figure img {
   display: block;
 }
 
+footer {
+  font-family: "Chivo", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
 @media only screen and (max-width: 600px) {
+  footer {
+    padding-left: 10%;
+    color: white;
+  }
+  section iframe {
+    width: 25em;
+    height: 15em;
+    display: block;
+    margin: auto;
+    padding: 25% 0 10% 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  section p {
+    padding-bottom: 12px;
+  }
+  section p,
+  section li {
+    margin: 0 10% 0 10%;
+  }
   figure {
     display: flex;
     justify-content: center;
@@ -108,6 +178,7 @@ figure img {
   }
   figure img {
     max-width: 20em;
+    object-fit: cover;
   }
 }
 

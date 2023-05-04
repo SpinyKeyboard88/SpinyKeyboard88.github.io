@@ -15,40 +15,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </script>
 </head>
-<body>
+<div>
     <header>
-        <nav>
-            <ul class="">
-                <li id="index" class="">
-                    <a href="index.html">Index</a>
-                </li>
-                <li id="about" class="">
-                    <a href="about.html">About</a>
-                </li>
-                <li id="contact" class="">
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li id="microTalk" class="">
-                    <a href="microTalk.html">microTalk</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <main>
-        <section id="beforeYouStart">
             <h1>Recording a microTalk podcast</h1>
             <p>This website will briefly go over everything you need to start the podcast</p>
-            <p>Click on a tab to open the info that you might need</p>
-        </section>
-
+            <p>Click on a tab to open for info on anything you might need<br>
+            You can also watch the video I made for reference</p>
+    </header>
+    <main>
         <div class="tab-block">
         <button class="tab-item" onclick="openPage('settingUpEquipment', this)">Setting up</button>
         <button class="tab-item" onclick="openPage('configuringMixPre10', this)">Configuring</button>
         <button class="tab-item" onclick="openPage('exportingProject', this)">Exporting</button>
         </div>
         <section id="settingUpEquipment" class="section hidden">
+
             <h2>Setting up the Equipment</h2>
             <div id="takingEverythingOut">
                 <h3>Taking everything out</h3>
@@ -60,18 +41,23 @@
                         <li>Microphones</li>
                         <li>Do not disturb sign</li>
                     </ul>
-                    <p>If you are recording for the podcast, make sure to have a <span class="green">release form</span> printed out for the guest to sign</p>
+                    <p>Everything needed to turn on the MixPre10 is in one bag</p>
+                    <p>The microphones and cables for the microphones should be all in a clear bag</p>
+                    <p>If you are recording for the podcast, make sure to have a <span class="important">release form</span> printed out for the guest to sign.
+                    Otherwise, the podcast might not be allowed to be released.</p>
                 </article>
             </div>
             <div id="connectingEquipment">
                 <h3>MixPre10 setup</h3>
-                <p>Since the microphones and cables are numbered, just be sure to connect them to the numbered ports</p>
+                <p>Since the microphones and cables are numbered, just be sure to connect them to the numbered ports 
+                    so it's easier to troubleshoot in case something isn't going as planned.
+                </p>
                 <p>The power on switch is numbered 15 on the image</p>
                 <figure>
                     <img class="bordered" src="../resources/images/microTalk/mixpre10-left.png">
                     <figcaption>left side of the MixPre10</figcaption>
                 </figure>
-                <p>You should also remember to connect the dongle to the headphone port</p>
+                <p>You should also remember to connect the dongle to the headphone port and not the AUX port</p>
                 <p>On the image, it should be numbered 18</p>
                 <figure>
                     <img class="bordered" src="../resources/images/microTalk/mixpre10-right.png">
@@ -92,12 +78,30 @@
                         <img src="../resources/images/microTalk/mixpre10-front.png">
                         <figcaption>front of the MixPre10</figcaption>
                     </figure>
+                    <p>After it's powered on, microphones are connected and turned on, you can start turning the knob
+                        to see if sound is getting picked up by the microphone.
+                    </p>
                     <p>When moving the numbered knobs, the screen should tell you what level they are at<br>
-                    the levels should be around 48 to 52. This is depending on how loud or low the speaker is</p>
+                    the levels <span class="important">should be around 48 to 52</span>. This varies on how loud or low the speaker is</p>
+                    <p>If the speaker too much of a loud voice, it can go just a bit lower than 48.
+                        If a speaker speaks too low, you can set the knob to go to 52, and should remind them to be a little closer to the microphone
+                        so everyone can hear them better and to ensure that the microhpone picks up on their voice. 
+                        </p>
+                        <p>
+                        Note: <span class="important"> It is not recommended to go over 52 since that's where i notice the microphone starts picking
+                            up background noise from the room.
+                        </span>
+                        
+                    </p>
+                    
                     
                     <h3>Arming the Mics</h3>
-                    <p>A <span class="green">very important </span>step is to make sure that the mics are ARMED</p>
+                    <p>A <span class="important"> very important </span> step is to make sure that the mics are ARMED</p>
+                    <p>This is so a separate mono file can be recorded for each person. In case of a loud cough, 
+                        too much background noise, or other issue comes from one mic, it can be isolated and fixed.
+                    </p>
                     <p>To check if a microphone is armed, you can tap on the screen and see if the numbers are red</p>
+                    <p>If they are in gray, then you need to ARM them</p>
                     <div class="flex-parent">
                         <figure class="flex-child">
                             <img src="../resources/images/microTalk/mixpre10-screen.png">
@@ -108,28 +112,38 @@
                             <figcaption>MixPre10 screen after tap</figcaption>
                         </figure>
                     </div>
-                    <div class="flex-parent">
-                        <div>
-                            <p>if they are not red, then be sure to tap the numbered knob to Arm the mic</p>
+                
+                            <p>To ARM, push in the knob of the microphone not currently ARMed</p>
                             <p>A new screen should pop up, then click on ARM</p>
-                            <p>This is to ensure that a seperate mono file is created for that microphone</p>
-                        </div>
+                    
                         <figure>
                             <img src="../resources/images/microTalk/mixPre10Arm.png">
                             <figcaption>MixPre10 knob screen</figcaption>
                         </figure>
-                    </div>
+        
                 </div>
                 <div id="micFeedback">
                     <h3>Feedback from mics</h3>
                     <p>When speaking into the mic, the numbered knobs should turn green</p>
                     <p>If they are not turning green, make sure the mic is turned on and correctly connected to the MixPre10</p>
+                    <p style="color: #8BC34A;">Green means that the audio level is good</p>
+                    <p style="color: #F1C232;">Yellow means that it's a bit too loud</p>
+                    <p style="color: #E53935;">Red means that it is very loud</p>
+                    <p>Although you can potentially fix how much sound is coming through the microhpone,
+                         it's always best to ensure that feedback stays green
+                    </p>
                 </div>
                 <div id="adjustingHeadphone grain">
                     <h3>Adjusting headphone grain</h3>
-                    <p>Another thing to check is the headphone grain level in case it's too loud or too low</p>
-                    <p>move the knob numbers 21 on the image until the screen tells you the headphone grain level is 72</p>
-                    <p>I chose the number 72 because it seems to be not too loud and not too low</p>
+                    <p>If the sound coming into your headpones is too loud and your microphone is already set around 48 to 52
+                        then you can adjust the headphone grain
+                    </p>
+                    <p>move the knob numbered 21 on the image until the screen tells you the headphone grain level is 72
+                        or wherever you think is not too loud
+                    </p>
+                    <p>I chose the number 72 because it seems to be not too loud and not too low, and have been using it for every podcast
+                        that was recorded.
+                    </p>
                     <figure>
                         <img class="bordered" src="../resources/images/microTalk/mixpre10-right.png">
                         <figcaption>right side of the MixPre10</figcaption>
@@ -138,8 +152,8 @@
                 <div id="settingUpProject">
                     <h3>Setting up projects</h3>
                     <p>To set up a new project, you have to click on the hamburger menu which is numbered 5</p>
-                    <p>Then click on projects</p>
-                    <p>then be sure to click on <span class="green">NEW</span> and then click <span class="green">DATE</span> 
+                    <p>Then click on <span class="important">Project</span></p>
+                    <p>then be sure to click on <span class="important">New</span> and then click <span class="important">Date</span> 
                         since it's easier to know by date than by name</p>
 
                     <div class="flex-parent">
@@ -152,31 +166,31 @@
                             <figcaption>MixPre10 menu screen</figcaption>
                         </figure>
                     </div>
-
-                    <div class="flex-parent">
-                        <div class="flex-child">
-                            <p>After that, you can change the name of the file by going back to home</p>
-                            <p>Then click on the title of the project on the <span class="green">MixPre10 screen</span>, it is numbered 2</p>
+                            <p>After setting up the project, you can change the name of the file by going back to home</p>
+                            <p>Then click on the title of the project on the <span class="important">MixPre10 screen</span>, it is numbered 2</p>
                             <p>You can click on edit, and then choose a new name for your project</p>
-                            <p>To choose a letter you have to use the headphone knob. To select a letter, push in the knob</p>
-                        </div>
-                        <figure class="flex-child">
-                            <img src="../resources/images/microTalk/mixPre10-rename.png">
-                            <figcaption>MixPre10 filename change screen</figcaption>
-                        </figure>
-                    </div>
+                            <p>To choose a letter you have to use the headphone knob. To select a letter, push in on the same knob</p>
+
+                            <figure>
+                                <img src="../resources/images/microTalk/mixPre10-rename.png">
+                                <figcaption>MixPre10 filename change screen</figcaption>
+                            </figure>
+    
                 </div>
                 <div id="recordingProject">
                     <h3>Recording a project</h3>
                     <p>to begin recording, move the red knob up (it is numbered 4)</p>
-                    <p>You should hear a beep once you start, and the light should come out of the red knob</p>
-                    <p>to stop recording, just push the red knob, and you will hear another sound along with the light turning off around the knob</p>
+                    <p>You should hear a <span class="important">beep</span> once you start, and the light should come out of the red knob</p>
+                    <p>to stop recording, just push the red knob, and you will hear a <span class="important">boop</span> along with the light turning off around the knob</p>
                     <figure>
                         <img src="../resources/images/microTalk/mixpre10-front.png">
                         <figcaption>MixPre10 front</figcaption>
                     </figure>
-                    <p>Some to listen to what you recorded on the MixPre10, you can push the knob down to play the recording.</p>
-                    <p>To stop listening, just push on the red knob again</p>
+                    <p>To listen to what you recorded on the MixPre10, you can push the knob down to play the recording.</p>
+                    <p>While listening to a recording, you can push the red knob left or right to fast forward or rewind</p>
+                    <p>To stop listening, just push on the red knob again.</p>
+                    <p>To listen to other recordings, move the red knob left or right.</p>
+
                 </div>
             </article>
         </section>
@@ -186,9 +200,10 @@
                 <h2>Exporting your project</h2>
                 <div id="transferMode">
                     <h3>Entering transfer mode</h3>
-                    <p>Once you finished recording the podcast, click on the hamburger icon to go to the menu </p>
-                    <p>Then click on Menu text to go to the next screen</p>
-                    <p>Finally, click on file transfer mode</p>
+                    <p>Once you are finished recording, click on the hamburger icon to go to the menu </p>
+                    <p>Then continue clicking on the Menu text until you see a <span class="important">System</span> option</p>
+                    <p>Click on <span class="important">System</span></p>
+                    <p>Finally you can click on <span class="important">File transfer</span></p>
                     <p>The screen should then say it's in file transfer mode</p>
                     <div class="flex-parent">
                         <figure>
@@ -203,8 +218,8 @@
                 </div>
                 <div id="plugInPlay">
                     <h3>Transferring to your computer</h3>
-                    <p>You need a USB-A or USB-C cable to continue to this part</p>
-                    <p>Connect the USB-c cable to the port numbered 13 or 14</p>
+                    <p>You need USB-C cable to be able to export your porject onto your computer</p>
+                    <p>Connect the USB-C cable to the port numbered 14</p>
                     <p>Then connect it to your computer</p>
                     <figure>
                         <img src="../resources/images/microTalk/mixpre10-left.png">
@@ -212,18 +227,32 @@
                     </figure>
                     <p>The MixPre10 should show up like if it was a USB or a drive</p>
                     <p>Navigate through your filesystem, find the date of the project</p>
-                    <p>Then make sure you <span class="green">COPY</span> the file to wherever you please</p>
-                    <p>Once you are finished copying, eject the MixPre10 and then cancel the FileTransfer mode</p>
+                    <p>Then make sure you <span class="important">Copy</span> the file to wherever you please.
+                    It's always best to leave a backup on the MixPre10 in case something goes wrong.</p>
+                    <p>Once you are finished copying, eject the MixPre10 and then exit the FileTransfer mode</p>
                 </div>
             </article>
         </section>
 
-        
+        <div class="flex-parent half">
+        <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eZ_2vll6Zrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </section>
+
+        <section>
+            <h2>"None of the resources work"</h2>
+            <p>If none of these resources worked out, then a last resort would be to consult the manual</p>
+            <p>Links to access the manual are below</p>
+            <p>The following link takes you to an html version of the manual: <a href="https://www.sounddevices.com/guides/mixpre-ii/">WebPage version</a></p>
+            <p>The following link takes you to a pdf version available for download: <a href="https://cdn.sounddevices.com/wp-content/uploads/2022/08/MixPre-II-v8.00.pdf">PDF version</a></p>
+            <p></p>
+        </section>
+        </div>
+
     </main>
     <footer>
-        <p>This section is the footer part</p>
-        <p>the text below tells you which page it is using javascript</p>
-        <p class="footer-text" id="currentPage"></p>
+        <h6>Website created by: Juan Porraz aka pizzasloth82</h6>
     </footer>
     <script src="../resources/js/endOf.js"></script>
 </body>

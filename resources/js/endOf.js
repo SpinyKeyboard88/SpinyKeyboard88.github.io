@@ -16,6 +16,4 @@ function openPage(pageName, tabItem) {
     visible.classList.remove("hidden");
     visible.classList.add("unhidden");
 
-    tabItem.classList.add("")
-
 }
