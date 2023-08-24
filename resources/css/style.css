@@ -1,228 +1,139 @@
 body {
-  background-image: url("../images/myGalagaBackground.gif");
-  background-color: aliceblue;
-  color: limegreen;
+  background-color: #e8eaed;
+  margin: 0;
 }
 
-.titleHeader {
-  color: lime;
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
+header {
+  color: #ffdfa8;
+  background-color: #be2528;
+  display: flex;
+  padding: 2rem 0;
 }
-
-#indexSection h1 {
-  text-align: center;
-  font-size: 50px;
-  background-color: black;
-}
-
-#indexSection p {
-  text-transform: capitalize;
-  text-align: center;
-  font-family: fantasy;
-  background-color: black;
-}
-
-#indexSection span {
-  font-family: monospace;
-  text-transform: none;
-  color: aqua;
-}
-
-.navContainer {
-  background-color: blue;
-}
-
-.navContainer ul {
+header ul {
   list-style-type: none;
-  margin: auto;
-  padding: 0%;
-  background-color: bisque;
-  /* overflow:hidden is added to the ul element to prevent li elements from going outside of the list. */
-  overflow: hidden;
-}
-
-.navContainer li {
-  float: left;
-}
-
-.navContainer li a {
-  display: block;
-  padding: 8px 10px;
-}
-
-.navContainer li a:hover:not(.active) {
-  background-color: blanchedalmond;
-}
-
-.active {
-  background-color: peachpuff;
-}
-
-p {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: green;
-}
-
-.languagesTable {
-  margin: 0 auto;
-}
-
-table {
-  font-size: 15px;
-  margin: 20px auto;
-}
-
-table h3 {
-  flex-basis: 2px;
-  padding: 5px;
-  text-align: left;
-  margin-left: 20px;
-}
-
-table h2 {
-  padding: 5px;
-}
-
-.langFoot td {
-  border: 2px solid coral;
-}
-
-th {
-  /* border: 2px solid #8c6b48; */
-  /* border: 10px inset rgb(132, 546, 324); */
-  border: 2px solid gold;
-}
-
-td {
-  border: 2px solid gold;
-  width: 300rem;
-}
-
-.langTableContainer {
-  max-width: 800px;
-  margin: 0 auto;
-  height: 660px;
-  color: green;
-  background-color: black;
-}
-
-/* Includes the entire sheet sections */
-.sheet {
-  text-align: center;
-}
-
-/* Everything that is inside the section information */
-.sheet .sheetBody {
-  margin: auto;
-  padding: 5px 10px 20x;
-  border: 1px solid purple;
-  background-color: aliceblue;
-  text-align: justify;
-}
-
-/* Only includes the p element within the sheets bodies */
-.sheet .sheetBody p {
-  font-size: small;
-  font-style: normal;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-#cssSection {
-  color: blueviolet;
-}
-
-/* Start of HTML section */
-#htmlSection {
-  color: goldenrod;
-}
-
-#htmlSection h3 {
-  color: blue;
-  text-indent: 1%;
-  text-decoration-line: underline;
-}
-
-#htmlSection h4 {
-  color: blue;
-  text-indent: 2%;
-}
-
-#htmlSection ul,
-li {
-  text-overflow: clip;
-  text-align: justify;
-}
-
-#htmlSection .example-html {
-  color: cornflowerblue;
-  text-indent: 10%;
-}
-
-#htmlSection .example-html::before {
-  text-decoration: wavy;
-  content: "Example: ";
-}
-
-/* End of HTML section */
-
-#javascriptSection {
-  color: darkviolet;
-}
-
-.guyFigure {
-  border: 2px coral solid;
-  position: absolute;
   display: flex;
-  flex-flow: column;
-  max-width: 100px;
-  margin: auto;
 }
 
-.guyFigure img {
-  max-width: 100px;
-  max-height: 90px;
-  z-index: 1;
-}
-
-.guyFigure figcaption {
-  background-color: grey;
-  color: white;
-  /* font-style: italic;
-  font-size: smaller;
-  font-family: sans-serif; 
-  or you can just use font*/
-  font: italic smaller sans-serif;
-  text-align: center;
-  padding: 1px;
-}
-
-.aboutTexts article {
-  background-color: black;
-}
-
-.games-list h2 {
-  text-align: center;
-}
-
-.list-wrapper {
-  margin: 3em 0;
+#home-intro {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-
-.box-art img {
-  width: 10rem;
+#home-intro .circle {
+  margin: 2rem 0;
+  border-radius: 50%;
+  border: 3px solid black;
+  width: 12rem;
+  flex-shrink: 0;
+}
+#home-intro .circle img {
   max-width: 100%;
+  object-fit: contain;
+}
+#home-intro h1 {
+  margin: 2rem 0;
+}
+#home-intro .links {
+  margin: 2rem 0;
+}
+
+.gold-box {
+  padding: 1.1875rem 1.875rem 1.125rem 0.5rem;
+  border: 1px solid #ffdfa8;
+}
+
+#project-list {
+  text-align: center;
+  align-items: center;
+}
+#project-list .project-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#project-list .card {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0 auto 2em auto;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#project-list .card .card-title {
+  width: 50%;
+}
+#project-list .card .card-image {
+  border: 2px solid #fff;
+  background: #707070;
+  width: 50%;
+}
+#project-list .card .card-image img {
+  max-width: 100%;
+}
+#project-list .card .card-description {
+  width: 50%;
 }
 
 footer {
-  font-family: Helvetica, sans-serif;
-  max-width: 120px;
-  padding: 1px;
-  margin: 1px 10px 1px;
-  background-color: black;
+  background-color: #be2528;
+  color: #ffdfa8;
+  padding: 4rem 0;
 }
+
+.blue-back {
+  background-color: #2c475a;
+  color: #e8eaed;
+}
+
+.svg-box {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem 1rem;
+}
+.svg-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media only screen and (min-width: 768px) {
+  #home-intro {
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  #home-intro .circle {
+    margin: 2rem;
+  }
+  #home-intro h1 {
+    margin: 2rem;
+  }
+  #home-intro .flex-reverse {
+    width: 50%;
+  }
+  #home-intro .row {
+    flex-direction: column;
+  }
+  .flex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  project-container {
+    column-count: 2;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

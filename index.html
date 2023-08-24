@@ -1,37 +1,123 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome to my website!</title>
-        <link href="./resources/css/style.css" type='text/css' rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="/resources/images/happyFace.png">
-    </head>
-    <body>
-        <header>
-                <nav class='navContainer'>
-                    <ul>
-                        <li><a class='active' href="./index.html">Home</a></li>
-                        <li><a href='./playground.html'>Playground</a></li>
-                        <li><a href='./codingSheets.html'>Coding Cheatsheets</a></li>
-                        <li><a href='./gamer.html'>Gamer</a></li>
-                        <li><a href='./about.html'>About</a></li>
-                        <li><a href="./webTech/webTech-index.html">WebTech-Portal</a></li>
-                        <li>NEW -><a href="./index-new.html">modern</a></li>
-                        <li>NEW -> <a href="./virtual-journal-home.html">VIRTUAL JOURNAL</a></li>
-                    </ul>
-                </nav>
-        </header>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to my website!</title>
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/resources/images/happyFace.png"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="gold-box">
+        <p>pizzasloth82</p>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li id="home" class="active">
+            <a onclick="updateContent('home')">Home</a>
+          </li>
+          <li id="about">
+            <a onclick="updateContent('about')">About</a>
+          </li>
+          <li id="contact">
+            <a onclick="updateContent('contact')">Contact</a>
+          </li>
+          <li id="projects">
+            <a onclick="updateContent('projects')">Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main"></main>
+    <footer>
+      <div class="row">
+        <div class="gold-box">
+          <a onclick="updateContent('about')">About</a>
+        </div>
+        <div class="gold-box">
+          <a onclick="updateContent('contact')">Contact</a>
+        </div>
+        <div class="gold-box">
+          <a onclick="updateContent('projects')">Projects</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="svg-box">
+          <img src="./resources/images/svg/github-gold.svg" />
+        </div>
+        <div class="svg-box">
+          <img src="./resources/images/svg/linkedin-gold.svg" />
+        </div>
+        <div class="svg-box">
+          <img src="/resources/images/svg/instagram-gold.svg" />
+        </div>
+        <div class="svg-box">
+          <img src="./resources/images/svg/twitter-gold.svg" />
+        </div>
+      </div>
+      <p>© Juan Porraz 2023-2023</p>
+    </footer>
+  </body>
 
-        <section id='indexSection'>
-            <h1>WELCOME TO MY WEBPAGE!!1!!!1!!</h1>
-            <p>Please travel through the navigation links above to gander over my work.</p>
-            <p><span>also here is a gif of ness :)<br><br>I made the background myself :D</span>
-            <script src='./resources/js/greetScript'></script>
-        </section>
-        <img src='./resources/images/spinning_ness.gif'>
-
-        <footer>
-            By: pizzasloth82
-        </footer>
-    </body>
+  <script src="./resources/js/jquery-3.5.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#main").load("home.html");
+    });
+  </script>
+  <script>
+    function updateContent(page) {
+      $.ajax({
+        url: "https://pizzasloth82.com/" + page + ".html",
+        method: "get", // HTTP method
+        success: function (data) {
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+          // Handle the data received from the server
+          switch (page) {
+            case "home":
+              document.getElementById("home").classList.add("active");
+              document.getElementById("about").classList.remove("active");
+              document.getElementById("contact").classList.remove("active");
+              document.getElementById("projects").classList.remove("active");
+              document.title = "Home Page";
+              $("#main").load("home.html");
+              break;
+            case "about":
+              document.getElementById("home").classList.remove("active");
+              document.getElementById("about").classList.add("active");
+              document.getElementById("contact").classList.remove("active");
+              document.getElementById("projects").classList.remove("active");
+              document.title = "About Me";
+              $("#main").load("about.html");
+              break;
+            case "contact":
+              document.getElementById("home").classList.remove("active");
+              document.getElementById("about").classList.remove("active");
+              document.getElementById("contact").classList.add("active");
+              document.getElementById("projects").classList.remove("active");
+              document.title = "Contact Me";
+              $("#main").load("contact.html");
+              break;
+            case "project":
+              document.getElementById("home").classList.remove("active");
+              document.getElementById("about").classList.remove("active");
+              document.getElementById("contact").classList.remove("active");
+              document.getElementById("projects").classList.add("active");
+              document.title = "Projects Page";
+              $("#main").load("projects.html");
+              break;
+            default:
+              break;
+          }
+        },
+        error: function (xhr, status, error) {
+          console.error(error);
+        },
+      });
+    }
+  </script>
 </html>
